@@ -11,7 +11,24 @@ This system doesn't aim to circumvent this limit, but rather retain the data pro
 The data returned by this application is in JSON format.  
 Although there is a web interface, it provides a basic idea of how the system should be used.
 
-Example Request: `/8.8.8.8`
+Example Request: `/8.8.8.8`  
+Example Data:
+```json
+{
+    "id": 3,
+    "ip": "8.8.8.8",
+    "hostname": "google-public-dns-a.google.com",
+    "city": "Mountain View",
+    "region": "California",
+    "country": "US",
+    "loc": "37.3860,-122.0840",
+    "org": "AS15169 Google LLC",
+    "postal": "94035",
+    "bogon": 0,
+    "created_at": "2018-02-15 00:53:10",
+    "updated_at": "2018-02-15 00:53:10"
+}
+```
 
 ## Installation
 This project was written in laravel.  
