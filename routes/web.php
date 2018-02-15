@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Controller@welcome');
+Route::get('/random', 'Controller@randomAddress');
+Route::get('/{address}', 'Controller@address');
